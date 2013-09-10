@@ -1,0 +1,105 @@
+body{
+	background-color: Black;
+	color: Beige;
+	font-size: 15px;
+	font-family: "Arial";
+	text-align:center;
+	}
+	
+li {list-style-type: none;
+}
+
+/** Tekst farge */
+
+li:nth-child(2) {
+	color: Green;
+	}
+	
+li:nth-child(3) {
+	color: Blue;
+	}
+
+li:nth-child(4) {
+	color: Yellow;
+	}	
+	
+li:nth-child(5) {
+	color: Red;
+	}	
+	
+li:nth-child(6) {
+	color: Green;
+	}	
+	
+li:nth-child(7) {
+	color: Blue;
+	}	
+
+li:nth-child(8) {
+	color: Yellow;
+	}
+
+li:nth-child(9) {
+	color: Red;
+	}
+
+li:nth-child(10) {
+	color: Green;
+	}	
+	
+li:nth-child(11) {
+	color: Blue;
+	}	
+
+li:nth-child(12) {
+	color: Yellow;
+	}
+
+li:nth-child(13) {
+	color: Red;
+	}	
+
+li:nth-child(14) {
+	color: Green;
+	}
+	
+li:nth-child(15) {
+	color: Blue;
+	}
+
+li:nth-child(16) {
+	color: Yellow;
+	}	
+	
+li:nth-child(17) {
+	color: Red;
+	}	
+	
+li:nth-child(18) {
+	color: Green;
+	}	
+	
+li:nth-child(19) {
+	color: Blue;
+	}	
+
+li:nth-child(20) {
+	color: Yellow;
+	}
+
+li:nth-child(21) {
+	color: Red;
+	}
+
+li:nth-child(22) {
+	color: Green;
+	}	
+	
+li:nth-child(23) {
+	color: Blue;
+	}	
+	
+	
+		
+	
+	
