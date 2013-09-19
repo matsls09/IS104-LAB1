@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HMTL 4.01//EN">
+
+<!--
+  LAB2
+  Navn: Mats Liver Skandsen
+  Jeg samarbeidet med: Gruppe 9
+  Tiden jeg har brukt på oppgaven: ...
+-->
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Programmeringsspråk (versjon 0,0,2)</title>
+	
+<!-- Kaller på javascript fila -->
+ <script src="proglangs.js"></script>
+ 
+<!-- Laste inn Javascript biblioteker her --> 
+ <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+<!-- Inkludere CSS her -->
+ <link rel="stylesheet" href="proglangs.css" type="text/css" media="all" />
+ 
+</head>
+
+<body>
+<!-- Site navigation menu -->
+<ul class="navbar">
+  <li><a href="proglangs.html">Hjem</a>
+  <li><a href="#" onclick="myFunction()">Kronologisk</a>
+  <li><a href="#" onclick="myFunction()">Hierarkisk</a>
+  <li><a href="#" onclick="myFunction()">Alfabetisk</a>
+</ul>
+
+
+<!-- Main content -->
+	<form action="">
+		<!--ord som blir vist når intet språk er selektert -->
+		<label for="proglangs"> Velg Programmeringsspåk:</label>
+		<!-- name/egennavn, id/ved bruk av script,  -->
+		<select name="select-pl" id="proglangs" onchange="printToOutputBox(this)">
+			<option value="IKKE" selected> </option> 
+			<option value="ActionScript" class="red-text">ActionScript</option>
+			<option value="AppleScript">AppleScript</option>
+			<option value="Asp">Asp</option>
+			<option value="BASIC">BASIC</option>
+			<option value="C">C</option>
+			<option value="Cplusspluss">C++</option>
+			<option value="Clojure">Clojure</option>
+			<option value="COBOL">COBOL</option>
+			<option value="ColdFusion">ColdFusion</option>
+			<option value="Erlang">Erlang</option>
+			<option value="Fortran">Fortran</option>
+			<option value="Groovy">Groovy</option>
+			<option value="Haskell">Haskell</option>
+			<option value="Java">Java</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="Lisp">Lisp</option>
+			<option value="Perl">Perl</option>
+			<option value="PHP">PHP</option>
+			<option value="Python">Python</option>
+			<option value="Ruby">Ruby</option>
+			<option value="Scala">Scala</option>
+			<option value="Scheme">Scheme</option>
+		</select>
+	</form>
+
+	<h1>Programmeringspråk</h1>
+	<p id="output"></p>
+	
+	<span id="outputbox">Velkommen til en mystisk verden av programmeringsspråk.</span>
+
+</form>
+
+<br>
+<br>
+
+<!-- Sign and date the page, it's only polite! -->
+<address>Laget 19 September 2013<br>
+  Av Mats Liver Skandsen.</address>
+
+
+</body>
+</html>
