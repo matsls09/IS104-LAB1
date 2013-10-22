@@ -1,0 +1,79 @@
+/* 
+	Setter margen (margin) og utfylling (padding) til 0, siden det
+	er vanlig med en satt verdi i nettleseren for dette
+*/
+
+body {
+	margin:0;
+	padding:0;
+}
+
+#body-container{
+	width:415px; /* Setter bredden konstant til 415px for body-container div */
+	height:500px; /* Setter bredden konstant til 500px for body-container div */
+	margin:0 auto; /* Dette vil sette div til senter */
+	border:1px solid #3285ef; /* Setter en ramme rundt body-container div */
+}
+
+#body-container .glossary-container{
+	clear: both; /* Dette vil ikke tillate noen elementer som flyter på noen av sidene */
+}
+
+#body-container .content-container{
+	height: 430px; /* Setter høyden konstant til 430px for content-container klassen */
+	width: 415px; /* Setter bredden konstant til 415px for content container klassen */
+	overflow: auto; /* Et rullefelt vises når innholdet er større en den spesifiserte høyden */
+	font-family: 'Arial',Verdana,Tahoma; /* Tar standardfonten 'Arial' */
+	font-size: 10pt; /* Setter fontstørrelse til 10 punkter */
+	clear: both; /* Dette vil ikke tillate noen elementer som flyter på noen av sidene */
+}
+
+/* Definer egenskaper for alle div objekter som ligger innen body-container elementet og tilbehører klassen content-container */
+#body-container .content-container div{
+	padding-left: 10px; /* Utfylling (padding) settes til 10px */
+	border-bottom: 1px #666666 solid; /*For adskille hver gruppe given fargen til nedre rammeside som #666666 (grå) med 1px */
+}
+
+/* Siden listingen skal rulles, bør det være en mulighet å komme fort tilbake til toppen */
+#body-container .content-container p.return-to-top{
+	color: #0066FF; /* Gir tekstfarge til "Tilbake til toppen" tekst */
+	text-decoration: underline; /* Teksten skal understrekes */
+	text-align: right; /* Teksten skal justeres til høyre */
+	margin-right: 10px; /* Gir en marg på 10px fra høyre */
+	cursor: pointer; /* Kursøren blir til en hånd */
+}
+
+
+/* Egenskapene til den ikke-ordnede listen defineres her */
+.firstUL{
+	padding: 0px 0px 0px 10px; /* Litt utfylling mot venstre og 0 mot toppen, høyre og bunnen */
+	margin: 0px; /* Setter alle marger til 0px*/
+	background-color: #3285ef; /* Bakgrunnsfarge */
+}
+
+/* Egenskapene til hvert listelement i den uordnede listen */
+.firstUL li{
+	/* For alle listelementer settes det et bakgrunnsbilde ved å bruke "CSS Image Sprites" */
+	background: transparent url(link_sprite_img.jpg) no-repeat scroll 0 0;
+	display: inline; /* Utlisningene vil bli satt på en rad (som tekst) */
+	font-family: 'Arial',Verdana,Tahoma; /* Setter fonten til 'Arial' */
+	font-size: 16pt; /* Setter fontstørrelsen til 16 punkter */
+	font-weight: bold; /* Gjør teksten fet */
+	padding: 10px 15px 22px; /* Setter utfylling til alle sidene */
+	line-height: 70px; /* Setter linjehøyde */
+	cursor: pointer; /* Kursøren blir til en hånd */
+	}
+
+/* Når listelementen (bokstav i dette tilfelle) er selekter må utseende endres
+Her brukes den andre delen av bilde ved å bruke "CSS Image Sprites"
+Man viser den nederste delen av bilde som 114px høy, dvs. forskjøvet med -57px */
+.firstUL li.selected {
+	background: transparent url(link_sprite_img.jpg) no-repeat scroll 0px -57px;
+	color: #ffffff; /* Setter fontfarge til 'white' */
+	font-weight: bold; /* Gjør teksten fet */
+	}
+	
+
+
+
+
